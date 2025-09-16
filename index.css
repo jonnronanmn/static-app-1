@@ -98,11 +98,11 @@ body {
 
 
 .fixed-img {
-  height: 450px;         /* bigger image height */
-  object-fit: cover;     /* fills card */
+  height: 450px;          /* bigger image height */
+  object-fit: cover;      /* fills card */
   object-position: center;
+  transition: transform 0.4s ease; /* smooth zoom on hover */
 }
-
 
 /* Card hover effect */
 .card-hover {
@@ -112,4 +112,9 @@ body {
 .card-hover:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image zoom when card hovers */
+.card-hover:hover .fixed-img {
+  transform: scale(1.05);
 }
