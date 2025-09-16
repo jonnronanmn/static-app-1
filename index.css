@@ -1,0 +1,115 @@
+body {
+  background-color: #f0f9f9; 
+  color: #333333; 
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+#navBar {
+  background-color: #d4f1f4; /* soft mint for navbar background */
+  border-bottom: 2px solid #0abfbc;
+}
+
+#navBar .navbar-brand {
+  color: #333333;            /* dark gray text for brand name */
+  font-weight: bold;          /* makes the brand text thicker */
+  font-size: 1.5rem;          /* increases font size for visibility */
+}
+
+#navBar .nav-link {
+  color: #333333;             /* dark gray text for all links */
+  font-weight: 500;           /* medium font weight */
+}
+
+#navBar .nav-link:hover {
+  color: #0abfbc;             /* minty blue accent when hovered */
+}
+
+/* Active link */
+#navBar .nav-link.active {
+  color: #0abfbc;             /* minty blue for currently active page */
+  font-weight: 600;           /* slightly bolder to show active state */
+}
+
+/* Optional: Buttons */
+.btn-primary {
+  background-color: #0abfbc;  /* minty blue button background */
+  border-color: #0abfbc;      /* match border to button */
+  color: #ffffff;             /* white text on button */
+}
+
+.btn-primary:hover {
+  background-color: #07a5a9;  /* slightly darker mint on hover */
+  border-color: #07a5a9;      /* border matches hover color */
+}
+
+
+/*Hero*/
+
+#hero {
+  background-image: url('https://cdn.theanimegallery.com/theanimegallery/318457ea-05b1-441a-86cf-cbc79d010a4c-cute-anime-background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero h1 {
+	font-size: 4rem;
+	font-weight: 500;
+	
+}
+
+#hero p {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+
+
+/*Carousel*/
+
+
+/* Fix carousel size */
+/* Fix carousel size but show full image */
+/* Fix carousel size but show full image */
+#carouselExampleIndicators {
+  height: 400px;           /* fixed carousel height */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;        /* background fills empty space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carouselExampleIndicators img {
+  width: 100%;             /* fill width */
+  height: 100%;            /* fill height */
+  object-fit: contain;     /* make the whole picture visible */
+  object-position: center; /* keep it centered */
+}
+
+
+
+.fixed-img {
+  height: 450px;         /* bigger image height */
+  object-fit: cover;     /* fills card */
+  object-position: center;
+}
+
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
